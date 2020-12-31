@@ -1,0 +1,10 @@
+import main as nm;
+import numpy as np;
+
+layer_sizes = (3, 5, 10)
+x = np.ones((layer_sizes[0],1))
+
+net = nm.NeuralNetwork(layer_sizes)
+prediction = net.predict(x)
+
+print(prediction)
